@@ -14,16 +14,6 @@ class Song
     @@all
   end
 
-  #def self.list_songs
-   # songs_sorted_by_name = self.all.sort_by do |song|
-    #  song.name
-    #end
-    #songs_sorted_by_name.each_with_index do |song,index|
-      #puts "#{index+1}. #{song.artist} - #{song.name} - #{song.genre}"
-    #end
-  #end
-
-
 end
 
 class MusicLibraryController
@@ -38,12 +28,6 @@ class MusicLibraryController
           puts "#{index}. #{song.artist} - #{song.name} - #{song.genre}"
         end
   end
-=begin
-    Song.all.sort{ |a, b| a.name <=> b.name }.each.with_index(1) do |s, i|
-        puts "#{i}. #{s.artist} - #{s.name} - #{s.genre}"
-      end
-
-=end
 end
 for_love_i_come = Song.new("For Love I Come", "Thundercat", "dance")
 green_aisles = Song.new("Green Aisles", "Real Estate", "country")
